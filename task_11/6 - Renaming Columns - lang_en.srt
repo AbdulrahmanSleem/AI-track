@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:03,134
+In order to get the append statement to work correctly,
+
+2
+00:00:03,134 --> 00:00:05,744
+we need to rename the column in red_df,
+
+3
+00:00:05,745 --> 00:00:08,655
+so that it matches the column name in the white_df.
+
+4
+00:00:08,654 --> 00:00:11,279
+To rename our columns in the previous lesson,
+
+5
+00:00:11,279 --> 00:00:14,149
+we set df.columns to a new list.
+
+6
+00:00:14,150 --> 00:00:17,115
+Right now, we just need to change one of the column labels.
+
+7
+00:00:17,114 --> 00:00:19,559
+If we try to do that by setting one value of
+
+8
+00:00:19,559 --> 00:00:23,954
+df.columns by indexing it like this, we get an error.
+
+9
+00:00:23,954 --> 00:00:27,209
+Index does not support mutable operations.
+
+10
+00:00:27,210 --> 00:00:31,410
+This just means, that this column label array is something we can't modify.
+
+11
+00:00:31,410 --> 00:00:33,000
+And since we can't modify it,
+
+12
+00:00:33,000 --> 00:00:36,460
+we'd have to reassign the whole thing to a new list like this.
+
+13
+00:00:36,460 --> 00:00:41,289
+Although this worked, this seems like a lot of work to change just one column name.
+
+14
+00:00:41,289 --> 00:00:44,579
+We could do this better by using a method called rename.
+
+15
+00:00:44,579 --> 00:00:46,960
+Look at the Stack Overflow page and try renaming
+
+16
+00:00:46,960 --> 00:00:50,000
+the columns with this method in the Jupyter notebook in the next section.
+

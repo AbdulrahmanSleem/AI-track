@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:02,125
+Although, this visual shows us that
+
+2
+00:00:02,125 --> 00:00:05,679
+the white wine samples has slightly higher average quality ratings,
+
+3
+00:00:05,679 --> 00:00:09,870
+it would be nice if we could get more details on where that's coming from.
+
+4
+00:00:09,869 --> 00:00:11,594
+Let's put a more detailed bar chart,
+
+5
+00:00:11,595 --> 00:00:14,280
+counts for each quality rating by color.
+
+6
+00:00:14,279 --> 00:00:18,649
+We can groupby quality and color to do this.
+
+7
+00:00:19,839 --> 00:00:23,009
+Because these are counts,
+
+8
+00:00:23,010 --> 00:00:25,600
+the values for all the columns will be the same.
+
+9
+00:00:25,600 --> 00:00:29,340
+So we'll just pick an arbitrary one.
+
+10
+00:00:30,489 --> 00:00:35,820
+That's close, but there are several things that can improve at this plot.
+
+11
+00:00:35,820 --> 00:00:38,939
+First, there's clearly more white samples than red samples.
+
+12
+00:00:38,939 --> 00:00:41,414
+So it's hard to make a fair comparison, we just count.
+
+13
+00:00:41,414 --> 00:00:42,615
+To balance this out,
+
+14
+00:00:42,615 --> 00:00:48,135
+let's divide each count by the total count for that color to use proportions instead.
+
+15
+00:00:48,134 --> 00:00:50,924
+That looks a lot better.
+
+16
+00:00:50,924 --> 00:00:53,684
+We can see that for the lower ratings: three, four and five,
+
+17
+00:00:53,685 --> 00:00:55,775
+red samples show higher proportions,
+
+18
+00:00:55,774 --> 00:00:57,579
+and for the higher ratings: six, seven,
+
+19
+00:00:57,579 --> 00:01:00,829
+eight and nine, white samples have higher proportions.
+
+20
+00:01:00,829 --> 00:01:02,314
+The data we're showing looks great,
+
+21
+00:01:02,314 --> 00:01:05,054
+but the tick labels on the X axis look messy,
+
+22
+00:01:05,055 --> 00:01:09,425
+and it would be nicer to have the red and white bar for each rating next to each other.
+
+23
+00:01:09,424 --> 00:01:13,159
+We're also missing a spot for the red samples with a quality rating of nine.
+
+24
+00:01:13,159 --> 00:01:14,685
+Although that number is zero,
+
+25
+00:01:14,685 --> 00:01:16,674
+that spot should still be there.
+
+26
+00:01:16,674 --> 00:01:19,448
+Since there seems to be a lot of customization needed,
+
+27
+00:01:19,448 --> 00:01:22,939
+it would make more sense to plot directly on Matplotlib than with pandas.
+
+28
+00:01:22,939 --> 00:01:26,000
+Before we move on, let's learn more about Matplotlib.
+

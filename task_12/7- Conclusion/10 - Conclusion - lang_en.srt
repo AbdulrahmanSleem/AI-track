@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:03,839
+Congratulations! You've reached the end of the first case study.
+
+2
+00:00:03,839 --> 00:00:06,900
+You've completed a full analysis on a data set with
+
+3
+00:00:06,900 --> 00:00:10,519
+the fundamentals of Python's core packages for data analysis.
+
+4
+00:00:10,519 --> 00:00:15,359
+You can apply these fundamentals to any data analysis project you tackle in the future.
+
+5
+00:00:15,359 --> 00:00:16,410
+In the next case study,
+
+6
+00:00:16,410 --> 00:00:18,839
+you'll analyze fuel economy data for a variety of
+
+7
+00:00:18,839 --> 00:00:23,000
+car models and dive deeper into Pandas, NumPy and matplotlib.
+

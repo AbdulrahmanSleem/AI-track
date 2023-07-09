@@ -1,0 +1,132 @@
+1
+00:00:00,000 --> 00:00:02,100
+Now, that we've made some conclusions,
+
+2
+00:00:02,100 --> 00:00:05,280
+we can create visualizations to display our findings regarding
+
+3
+00:00:05,280 --> 00:00:09,455
+the associations between wine quality and different properties of wine.
+
+4
+00:00:09,455 --> 00:00:13,435
+I've already imported pandas and loaded our edited wine quality data.
+
+5
+00:00:13,435 --> 00:00:19,070
+Let's also include the matplotlib inline statement to view plots in our notebook.
+
+6
+00:00:19,070 --> 00:00:23,100
+Let's create visualizations, to help us understand if a certain type of wine,
+
+7
+00:00:23,100 --> 00:00:26,190
+red or white, is associated with higher quality.
+
+8
+00:00:26,190 --> 00:00:27,595
+In the previous section,
+
+9
+00:00:27,594 --> 00:00:31,094
+we used groupby to find the mean wine quality for each color.
+
+10
+00:00:31,094 --> 00:00:34,494
+We're going to use these results for these visualizations.
+
+11
+00:00:34,494 --> 00:00:38,969
+To do this, we can add plot to the end of the groupby statement.
+
+12
+00:00:38,969 --> 00:00:41,449
+We can also specify parameters for the title,
+
+13
+00:00:41,450 --> 00:00:46,060
+as well as the color and transparency of the bars.
+
+14
+00:00:46,289 --> 00:00:53,159
+Let's actually create a separate list for colors to make this cleaner.
+
+15
+00:00:53,780 --> 00:01:00,335
+This makes sense, when there are multiple colors you want to graph with multiple times.
+
+16
+00:01:00,335 --> 00:01:02,870
+For our final visualizations,
+
+17
+00:01:02,869 --> 00:01:06,109
+we should have appropriate labels for both the x and y axis.
+
+18
+00:01:06,109 --> 00:01:09,584
+We also don't want our white bar disappearing into a white background.
+
+19
+00:01:09,584 --> 00:01:13,254
+At this point, we can't get away with using only pandas.
+
+20
+00:01:13,254 --> 00:01:18,699
+Let's add matplotlib. Pyplot is a module in matplotlib we'll use to create our plots.
+
+21
+00:01:18,700 --> 00:01:23,045
+Standard convention is to import it and alias it as plt.
+
+22
+00:01:23,045 --> 00:01:25,280
+Let's also import seaborn.
+
+23
+00:01:25,280 --> 00:01:28,635
+Seaborn standard alias is sns.
+
+24
+00:01:28,635 --> 00:01:30,550
+Even if we don't use seaborn directly,
+
+25
+00:01:30,549 --> 00:01:33,129
+it adds additional formatting to our plots that make them more
+
+26
+00:01:33,129 --> 00:01:36,399
+aesthetically pleasing, than standard matplotlib.
+
+27
+00:01:36,400 --> 00:01:39,995
+Additional information on this is provided below.
+
+28
+00:01:39,995 --> 00:01:45,750
+Now, that we have matplotlib, we can set x and y axis labels like this.
+
+29
+00:01:47,900 --> 00:01:53,520
+Our graph looks nicer and the white part doesn't blend into the background.
+
+30
+00:01:53,519 --> 00:01:58,269
+Although this works, that first line of code is pretty long and difficult to read.
+
+31
+00:01:58,269 --> 00:02:01,567
+Let's assign the groupby statement to a new object.
+
+32
+00:02:01,567 --> 00:02:03,393
+This won't change the visualization itself,
+
+33
+00:02:03,393 --> 00:02:05,000
+It just makes our lives easier.
+

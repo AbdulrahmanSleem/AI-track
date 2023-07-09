@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:03,734
+Welcome to the first case study and intro to the data analysis.
+
+2
+00:00:03,734 --> 00:00:08,099
+In this lesson, you'll go through the entire data analysis process to analyze
+
+3
+00:00:08,099 --> 00:00:13,080
+a dataset on the chemical properties of wines and their associated quality readings.
+
+4
+00:00:13,080 --> 00:00:15,884
+You'll also learn how to work with data using pandas,
+
+5
+00:00:15,884 --> 00:00:17,879
+Numpy and Matplotlib.
+
+6
+00:00:17,879 --> 00:00:20,699
+Data often requires a significant amount of work
+
+7
+00:00:20,699 --> 00:00:23,384
+to make it suitable for analysis like cleaning,
+
+8
+00:00:23,385 --> 00:00:25,440
+feature engineering and visualizing,
+
+9
+00:00:25,440 --> 00:00:28,440
+and these packages help make that work faster and more
+
+10
+00:00:28,440 --> 00:00:31,320
+efficient than standard python. Let's begin.
+

@@ -1,0 +1,164 @@
+1
+00:00:00,000 --> 00:00:02,459
+To analyze our data more efficiently,
+
+2
+00:00:02,459 --> 00:00:06,540
+let's combine the red and white data sets into one data frame.
+
+3
+00:00:06,540 --> 00:00:09,839
+Before we do this, we need to add a new feature or column
+
+4
+00:00:09,839 --> 00:00:14,160
+to each data frame that indicates whether the wine is red or white.
+
+5
+00:00:14,160 --> 00:00:16,289
+This way we will preserve this characteristic
+
+6
+00:00:16,289 --> 00:00:19,309
+for each sample when the data frames are combined.
+
+7
+00:00:19,309 --> 00:00:22,125
+One way we can do this is by creating an array using
+
+8
+00:00:22,125 --> 00:00:25,850
+NumPy and add that as a column into each data frame.
+
+9
+00:00:25,850 --> 00:00:28,922
+Let's learn about NumPy and how we can use it to do this.
+
+10
+00:00:28,922 --> 00:00:35,270
+NumPy is short for numerical Python and is designed for efficient scientific computation.
+
+11
+00:00:35,270 --> 00:00:37,650
+It's built on top of the programming language C
+
+12
+00:00:37,649 --> 00:00:40,350
+which works at a lower level on our computer.
+
+13
+00:00:40,350 --> 00:00:42,570
+To understand what this means for the speed
+
+14
+00:00:42,570 --> 00:00:44,320
+of our code, see the link in instructor notes.
+
+15
+00:00:44,320 --> 00:00:47,831
+Pandas is built on top of NumPy
+
+16
+00:00:47,831 --> 00:00:52,710
+which is why it's so fast with all these computations for functions like Describe.
+
+17
+00:00:52,710 --> 00:00:57,780
+If you try doing these computations in plain Python, it's much slower.
+
+18
+00:00:57,780 --> 00:01:02,890
+Here's an example, calculating the mean for an array of 100 million values.
+
+19
+00:01:02,890 --> 00:01:07,790
+This generates an array of 100 million random floats between zero and one.
+
+20
+00:01:07,790 --> 00:01:11,090
+We could also type in 1e8 to make this clear.
+
+21
+00:01:11,090 --> 00:01:14,760
+Looks like that provide the float when it requires an int.
+
+22
+00:01:14,760 --> 00:01:18,035
+Let's see how long it takes standard Python to compute the mean of this array.
+
+23
+00:01:18,034 --> 00:01:24,129
+Okay, so a little more than 9 seconds.
+
+24
+00:01:24,129 --> 00:01:25,899
+Now let's see how long it takes NumPy.
+
+25
+00:01:25,900 --> 00:01:30,165
+That is almost instant.
+
+26
+00:01:30,165 --> 00:01:32,609
+Isn't that cool? Imagine how much it speeds
+
+27
+00:01:32,609 --> 00:01:35,579
+up the process when there is much more computation happening.
+
+28
+00:01:35,579 --> 00:01:37,590
+For example, let's say we are engineering
+
+29
+00:01:37,590 --> 00:01:40,320
+a whole new feature or column which you compute by
+
+30
+00:01:40,319 --> 00:01:42,059
+multiplying the values in two columns
+
+31
+00:01:42,060 --> 00:01:46,025
+together and divide by the values in another for each row.
+
+32
+00:01:46,025 --> 00:01:48,525
+Unlike NumPy, plain Python will require
+
+33
+00:01:48,525 --> 00:01:53,359
+a massively long loop through all the rows to compute a new value for each row.
+
+34
+00:01:53,359 --> 00:01:55,769
+The main object we work with in NumPy is
+
+35
+00:01:55,769 --> 00:01:59,599
+a multi-dimensional array of values of all the same data type.
+
+36
+00:01:59,599 --> 00:02:01,989
+These arrays, along with many useful functions in NumPy,
+
+37
+00:02:01,989 --> 00:02:06,054
+optimize and simplify operations on data.
+
+38
+00:02:06,055 --> 00:02:08,310
+You'll learn more about NumPy arrays later.
+
+39
+00:02:08,310 --> 00:02:09,735
+In the next section,
+
+40
+00:02:09,735 --> 00:02:11,520
+you'll use NumPy to create an array for
+
+41
+00:02:11,520 --> 00:02:14,040
+a new color column for the red and white data frames.
+

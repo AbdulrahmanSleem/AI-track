@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:03,115
+Let's open these data sets in a Jupyter Notebook.
+
+2
+00:00:03,115 --> 00:00:08,044
+I downloaded the CSV files and put them in the same directory as this notebook.
+
+3
+00:00:08,044 --> 00:00:09,731
+So like we did in the last lesson,
+
+4
+00:00:09,731 --> 00:00:14,739
+we can read the data sets with pandas read_csv and the file name as a parameter.
+
+5
+00:00:14,740 --> 00:00:17,754
+What's going on here?
+
+6
+00:00:17,754 --> 00:00:19,983
+All the data was read into one column,
+
+7
+00:00:19,983 --> 00:00:23,250
+and it looks like the values are separated by semicolons.
+
+8
+00:00:23,250 --> 00:00:27,949
+Sometimes, CSV files use different characters to separate their values.
+
+9
+00:00:27,949 --> 00:00:32,579
+We can choose the correct delimiter by setting this additional parameter in read_csv.
+
+10
+00:00:32,579 --> 00:00:34,729
+By default, this parameter is set to
+
+11
+00:00:34,729 --> 00:00:38,224
+a comma which is why we don't normally have to specify this.
+
+12
+00:00:38,225 --> 00:00:43,210
+Cool. It's normal to mess up the first time you read in a CSV file.
+
+13
+00:00:43,210 --> 00:00:47,490
+For example, if you didn't know that there wasn't a header line in a CSV file,
+
+14
+00:00:47,490 --> 00:00:50,490
+you'd first incorrectly use the values in the first line as
+
+15
+00:00:50,490 --> 00:00:52,829
+a column labels and then realize you need to
+
+16
+00:00:52,829 --> 00:00:56,015
+specify parameters to set your own column labels.
+
+17
+00:00:56,015 --> 00:00:59,105
+Alternatively, you can inspect the file yourself.
+
+18
+00:00:59,104 --> 00:01:01,619
+One way of doing this is by opening it in
+
+19
+00:01:01,619 --> 00:01:04,709
+a text editor or a spreadsheet program like Google Sheets.
+
+20
+00:01:04,709 --> 00:01:06,524
+But if you're working with large data sets,
+
+21
+00:01:06,525 --> 00:01:09,980
+this might take a long time to load or crash a program.
+
+22
+00:01:09,980 --> 00:01:13,820
+For this scenario, trial and error in pandas would be the better option.
+
